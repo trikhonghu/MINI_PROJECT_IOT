@@ -13,7 +13,7 @@ def getPort():
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
     #return commPort
-    return "COM6"
+    return "COM5"
 
 if getPort() != "None":
     ser = serial.Serial( port=getPort(), baudrate=115200)
